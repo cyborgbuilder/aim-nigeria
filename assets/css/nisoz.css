@@ -4753,7 +4753,6 @@ body.locked .page-wrapper {
 }
 
 .main-slider__shape-3 img {
-  mix-blend-mode: luminosity;
   width: auto !important;
 }
 
@@ -5712,7 +5711,6 @@ body.locked .page-wrapper {
 }
 
 .about-one__thumb__one img {
-  mix-blend-mode: luminosity;
 }
 
 @media (max-width: 767px) {
@@ -5736,7 +5734,6 @@ body.locked .page-wrapper {
 }
 
 .about-one__thumb__two {
-  background-color: var(--nisoz-black);
   position: absolute;
   right: -100px;
   top: 40px;
@@ -9115,7 +9112,6 @@ body.locked .page-wrapper {
   width: 100%;
   height: 857px;
   object-fit: cover;
-  mix-blend-mode: luminosity;
 }
 
 @media (max-width: 991px) {
@@ -9858,7 +9854,6 @@ body.locked .page-wrapper {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  mix-blend-mode: luminosity;
 }
 
 .accrodion-one__right {
@@ -14321,7 +14316,7 @@ body.boxed-wrapper .main-menu__phone {
 /* Challenge Table Styles */
 .challenge-table {
   background-color: #fff;
-  border-radius: 8px;
+
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   overflow: hidden;
 }
@@ -14425,3 +14420,180 @@ body.boxed-wrapper .main-menu__phone {
 .service-one__item__icon img{
   width: 80px;;
 }
+
+
+/* New Section */
+
+
+.container-fluid {
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* New container to center the fact row */
+.about-one__fact-container {
+  max-width: 1200px; /* Constrain width for centering */
+  margin: 0 auto; /* Center horizontally */
+  padding: 0 20px; /* Prevent edge clipping */
+}
+
+/* Flex row for horizontal layout */
+.about-one__fact-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Center items within the row */
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 30px; /* Space between items */
+}
+
+/* Individual fact items */
+.about-one__fact {
+  flex: 1; /* Equal width */
+  text-align: center;
+  position: relative; /* For divider */
+  min-width: 150px; /* Prevent squeezing */
+}
+
+/* Vertical dividers */
+.about-one__fact:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: -15px; /* Center divider in gap */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 60px;
+  background-color: #ccc;
+}
+
+/* Styling for titles */
+.about-one__fact__title {
+  font-size: 14px;
+  white-space: nowrap;
+  margin-top: 10px;
+}
+
+/* Icon and count sizes */
+.about-one__fact__icon {
+  font-size: 50px;
+}
+
+.about-one__fact__count {
+  font-size: 40px;
+}
+
+/* Responsive design */
+@media (max-width: 991px) {
+  .about-one__fact-container {
+      max-width: 100%; /* Full width on smaller screens */
+  }
+
+  .about-one__fact-row {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+  }
+
+  .about-one__fact {
+      flex: 0 0 45%; /* Two items per row */
+      min-width: 120px;
+      margin-bottom: 20px;
+  }
+
+  .about-one__fact::after {
+      display: none; /* Hide dividers */
+  }
+}
+
+@media (max-width: 576px) {
+  .about-one__fact {
+      flex: 0 0 100%; /* Stack vertically */
+      min-width: 100%;
+  }
+}
+
+/* Checkbox Wrapper */
+.checkbox-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Checkbox input */
+.checkbox-wrapper input[type="checkbox"] {
+  margin-top: 4px;
+  min-width: 18px;
+  min-height: 18px;
+  accent-color: #2638A1; /* Match your theme */
+  cursor: pointer;
+}
+
+/* Checkbox Label & Link */
+.checkbox-wrapper label {
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.checkbox-wrapper label a {
+  color: #2638A1;
+  text-decoration: underline;
+  transition: 0.2s ease;
+}
+
+.checkbox-wrapper label a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+/* Responsive Fix */
+@media (max-width: 575px) {
+  .checkbox-wrapper {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .checkbox-wrapper input[type="checkbox"] {
+      margin-top: 0;
+  }
+}
+
+.mobile-register-btn {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: #fff;
+  padding: 10px;
+  text-align: center;
+  display: none;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
+}
+
+.reg-btn{
+  background-color: var(--nisoz-base);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Show only on small screens */
+@media (max-width: 1200px) {
+  .mobile-register-btn {
+      display: block;
+  }
+}
+
+
+
+
