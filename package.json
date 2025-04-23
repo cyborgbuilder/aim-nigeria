@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "purge": "postcss assets/css/nisoz.css -o assets/css/nisoz.purged.css"
   },
   "repository": {
     "type": "git",
@@ -21,7 +22,5 @@
     "@fullhuman/postcss-purgecss": "^7.0.2",
     "cssnano": "^7.0.6",
     "postcss-cli": "^11.0.1"
-  },
-  "purge": "postcss assets/css/nisoz.css -o assets/css/nisoz.purged.css"
-
+  }
 }

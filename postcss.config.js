@@ -1,12 +1,11 @@
-const purgecss = require('@fullhuman/postcss-purgecss');
+const purgecss = require('@fullhuman/postcss-purgecss').default;
 const cssnano = require('cssnano');
 
 module.exports = {
   plugins: [
     purgecss({
       content: ['./*.html', './assets/js/**/*.js'],
-      css: ['./assets/css/nisoz.css'],
-      safelist: ['active', 'show', /^swiper-/], // Add class names to keep
+      safelist: ['active', 'show', /^swiper-/] // keep important classes
     }),
     cssnano()
   ]
