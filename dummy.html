@@ -1,0 +1,1920 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zxx">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>2nd Edition - Stormwater & Wastewater Management Conference, UAE</title>
+   <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/plugin.css">
+   <link rel="stylesheet" href="css/default.css">
+   <link rel="stylesheet" href="css/styles.css">
+   <link rel="stylesheet" href="css/rain-style.css">
+   <link rel="stylesheet" href="icons/font-awesome.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
+   <link href="countdown/css/flip.css" id="stylesheet" rel="stylesheet">
+   <link rel="stylesheet" media="screen" href="assetss/vendor/swiper/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+   <!-- <div class="rain" id="rainContainer"></div> -->
+   <style>
+      #preloader {
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background-color: white;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         z-index: 9999;
+      }
+
+      #content {
+         display: none;
+      }
+   </style>
+   <style>
+      .error-message {
+         color: red;
+      }
+
+      .form-content {
+         position: relative;
+      }
+
+      #loading {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background-color: rgba(255, 255, 255, 0.8);
+         display: none;
+         justify-content: center;
+         align-items: center;
+         z-index: 999;
+      }
+
+      .loader-image {
+         display: block;
+         margin: auto;
+      }
+   </style>
+   <style>
+      .flipdown.flipdown__theme-dark .rotor,
+      .flipdown.flipdown__theme-dark .rotor-top,
+      .flipdown.flipdown__theme-dark .rotor-leaf-front,
+      .flipdown.flipdown__theme-dark .rotor-bottom,
+      .flipdown.flipdown__theme-dark .rotor-leaf-rear {
+         color: #38a493;
+         background-color: rgb(59, 59, 59);
+      }
+   </style>
+   <style>
+      #heart {
+         animation: hearbeat 1.7s infinite ease-in-out;
+      }
+
+      #heart:after {
+         left: 0;
+         transform: rotate(45deg);
+         transform-origin: 100% 100%;
+      }
+
+      @keyframes hearbeat {
+         0% {
+            transform: scale(1);
+         }
+
+         50% {
+            transform: scale(1.1);
+         }
+
+         100% {
+            transform: scale(1);
+         }
+      }
+   </style>
+   <style>
+      .buttonFill a {
+         background: linear-gradient(to left, #172f2d 50%, #115188 50%);
+         background-size: 200% 100%;
+         transition: all 1s ease;
+      }
+
+      .buttonFill a:hover {
+         background-position: right bottom;
+      }
+   </style>
+   <div id="preloader">
+      <div class="loader">
+         <img src="images/icon/loading.gif" alt="Loading..." class="loader-image" width="350">
+      </div>
+   </div>
+   <header class="main_header_area position-absolute w-100 ">
+      <div class="header-content text-white">
+         <div class="container">
+            <div class="header-content-inner py-2">
+               <div class="row align-items-center">
+                  <div class="col-lg-6">
+                  </div>
+                  <div class="col-lg-6">
+                     <div class="header-event-info text-end">
+                        <ul class="m-0 p-0">
+                           <li class="px-2 border-end border-lightgrey border-opacity-50 d-inline">
+                              <i class="fa fa-phone pe-1"></i>
+                              <small>( +971 ) 50 5718 867</small>
+                           </li>
+                           <li class=" px-2 d-inline border-lightgrey border-opacity-50">
+                              <i class="fa fa-envelope-o pe-1"></i>
+                              <small><a
+                                    mail:to="partnerships@cogentsolutions.ae">partnerships@cogentsolutions.ae</a></small>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="header_menu " id="header_menu" style="background-color: white;">
+         <div class="container">
+            <nav class="navbar navbar-expand-lg py-2">
+               <div class="row">
+                  <div class="col-lg-2 col-md-6">
+                     <div class="navbar-brand m-0">
+                        <a href="https://cogentsolutions.ae">
+                           <img src="images/logo/1.png" alt="Logo" class="w-100">
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-lg-7 col-md-6 ">
+                     <div class="collapse navbar-collapse justify-content-left mt-2" id="bs-example-navbar-collapse-1">
+                        <ul class="navbar-nav align-items-left" id="responsive-menu">
+                           <li class="nav-item ">
+                              <a class="nav-link px-2 my-4 py-0" style="font-weight: 600; color: #172f2d;"
+                                 aria-current="page" href="#home-page">Home</a>
+                           </li>
+                           <li class="nav-item ">
+                              <a class="nav-link px-2 my-4 py-0" style="font-weight: 600; color: #172f2d;"
+                                 aria-current="page" href="#event-overview">Event Overview</a>
+                           </li>
+                           <li class="nav-item ">
+                              <a class="nav-link px-2 my-4 py-0" style="font-weight: 600; color: #172f2d;"
+                                 aria-current="page" href="#profile-attend">Speakers</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 mt-2">
+                     <div class="menu-search text-end">
+                        <a class="btn btn3" id="heart" href="#registration">REGISTRATION<i
+                              class="fa fa-long-arrow-right ms-4"></i></a>
+                     </div>
+                  </div>
+                  <div id="slicknav-mobile"></div>
+               </div>
+            </nav>
+         </div>
+         <div id="search1">
+            <button type="button" class="close">×</button>
+            <form>
+               <input class="form-control form-control-lg rounded text-white" placeholder="Search...">
+            </form>
+            <button type="button" class="btn"><i class="fa fa-search text-white" aria-hidden="true"></i></button>
+         </div>
+      </div>
+   </header>
+   <style>
+      .banner {
+         position: relative;
+         overflow: hidden;
+      }
+
+      .background-video {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         transform: translate(-50%, -50%);
+         z-index: 1;
+      }
+
+      .overlay {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background: rgba(0, 0, 0, 0.4);
+         z-index: 2;
+      }
+
+      .inner-banner {
+         position: relative;
+         z-index: 3;
+      }
+
+      .success-message {
+         margin-top: 20px;
+         padding: 15px;
+         background-color: #d4edda;
+         color: #155724;
+         border: 1px solid #c3e6cb;
+         border-radius: 5px;
+         text-align: center;
+      }
+
+      /* Base style for the parallax background */
+      .parallax-background {
+         background-image: url('images/background/water-bg2.jpg');
+         /* background-attachment: fixed;*/
+         background-position: bottom;
+         background-repeat: no-repeat;
+         background-size: cover;
+
+         position: relative;
+         z-index: 1;
+      }
+   </style>
+   <section class=" pb-0 parallax-background" id="home-page">
+      <!-- <video autoplay muted loop preload="auto" class="background-video">
+            <source src="images/background/intro.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>-->
+      <div class="overlay"></div>
+      <div class="container">
+         <div class="inner-banner position-relative text-white ">
+            <div class="row">
+               <div class="col-lg-6 order-1 order-lg-1">
+                  <div class="banner-right ms-2 text-center p-6  text-lg-start bg-opacity-75 rounded p-4"
+                     style="background-color: rgba(255, 255, 255, 0.2) !important; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); padding: 10px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+
+                     <div class="banner-image">
+                        <img src="images/team/6.png" alt="banner-image" class="img-fluid" style="border-radius: 7px;">
+                     </div>
+                     <div class="banner-title pb-2 mt-4">
+                        <!-- <h5 class="text-white pb-3">WELCOME TO SAUDI ARABIA’S PREMIER</h5> -->
+                     </div>
+                     <div class="banner-event-info pb-3">
+                        <ul class="m-0 ps-0 d-sm-flex justify-content-center justify-content-lg-start list-unstyled">
+                           <li class="pe-2 border-end border-1 border-lightgrey">
+                              <i class="fa fa-calendar-o pe-1" style="font-size:larger"></i> 7th October, 2025
+                           </li>
+                           <li class="ps-2">
+                              <i class="fa fa-map-marker pe-1" style="font-size:larger"></i> Dubai, UAE
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="event-description">
+                        <span class=" h4 pb-4 m-0">Innovating Water Infrastructure: Tackling
+                           Stormwater and Wastewater Challenges for a Resilient Dubai.</span>
+                        <div class="banner-button pt-4">
+                           <div class="row">
+                              <div class="col-lg-6 col-md-6">
+                                 <a class="btn me-3 my-1 w-100" href="#registration">REGISTRATION <i
+                                       class="fa fa-long-arrow-right ms-4"></i></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="countdown">
+                     <div id="countdown" style="height: 130px;"
+                        class="countdown-inner d-flex w-100 p-2 rounded-5 justify-content-center box-shadow position-relative z-2">
+                        <iframe src="countdown/htmlviewer.html"
+                           style="width: 100%; height: 100%; border: none; overflow: hidden;" scrolling="no"
+                           allowtransparency="true" frameborder="0"></iframe>
+                     </div>
+                  </div>
+                  <div class="text-center text-light mt-4 mb-4">
+                     <div>
+                        <span class="h3" style="color:white;">Only a Few Days Left to <br>Join Our Community Conference
+                        </span>
+                     </div>
+                  </div>
+               </div>
+               <!-- <div class="col-lg-6 order-2 order-lg-2 mb-5">
+                     <div class="col-xl-12 col-md-6">
+                        <div class="text-center text-light">
+                           <div>
+                              <span class="h2">Endorsing Government Partner</span>
+                           </div>
+                           <div>
+                              <div class="card-body mt-2 shadow-lg" style="display:flex;justify-content: center; ">
+                                 <br>
+                                 <div>
+                                    <img src="images/background/support.png" width="250" alt="Background shapes" data-aos="fade-up" data-aos-duration="1000" style="border-radius: 5px; width: 550px; margin: 15px;" class="aos-init aos-animate">
+                                 </div>
+                              </div>
+                                 <div class="text-center text-light mt-4">
+                                    <div>
+                                       <span class="h3" style="color:white;">Only a Few Days Left to <br>Join Our Community Conference </span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>                  
+                 </div> -->
+            </div>
+         </div>
+      </div>
+
+   </section>
+
+
+
+   <section class="overview pb-0" id="event-overview">
+      <div class="container">
+         <div class="inner-overview position-relative" style="padding-bottom:60px !important">
+            <div class="row justify-content-between">
+               <div class="col-lg-6">
+                  <div class="overview-left text-center text-lg-start" data-aos="fade-right" data-aos-duration="2000">
+                     <div class="overview-title pb-4">
+                        <p class="mb-1 pink">Event Overview</p>
+                        <h2 class="mb-2">Water Management<span class="pink"> CONFERENCE - Dubai, UAE</span></h2>
+                        <P style="text-align: justify;font-size: 22px;line-height: normal;">As Dubai continues its rapid
+                           urban expansion and pursues ambitious sustainability goals, efficient water management is a
+                           top priority. The Water Management Conference will bring together government authorities,
+                           industry leaders, engineers, and technology innovators to address key challenges and explore
+                           cutting-edge solutions for stormwater control, wastewater recycling, and flood resilience in
+                           the UAE.
+                        </P>
+                        <P style="text-align: justify;font-size: 22px;line-height: normal;">This one-day conference will
+                           focus on advanced technologies, regulatory frameworks, and sustainable strategies to enhance
+                           Dubai’s water infrastructure. With the UAE’s commitment to smart city initiatives and climate
+                           resilience, experts will share insights on adapting global best practices to the region and
+                           how public-private partnerships (PPPs) can drive innovation, investment, and long-term water
+                           sustainability.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-5">
+                  <div class="overview-img">
+                     <div class="row align-items-center">
+                        <div class="col-lg-6 col-md-6 p-0 ">
+                           <div class="container-img-left mb-2">
+                              <div class="embossed-div img-left-1 float-end w-lg-80" data-aos-duration="1000"
+                                 data-aos="fade-down">
+                                 <img class=" mb-2 w-100 rounded" src="images/group/1.jpg" alt="group-image">
+                              </div>
+                              <div class="img-left-2" data-aos-duration="1000" data-aos="fade-left">
+                                 <img src="images/group/2.jpg" alt="group-image" class="embossed-div w-100 rounded">
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                           <div class="container-img-right w-lg-75" data-aos-duration="1000" data-aos="fade-up">
+                              <img src="images/group/3.jpg" alt="group-image" class="embossed-div w-100 rounded">
+                           </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 mt-5 mb-2">
+                           <span class="h3 pink">UAE EDITION HIGHLIGHTS VIDEO</span>
+                           <div class="container-img-right w-lg-75" data-aos-duration="1000" data-aos="fade-up"
+                              style="margin-top: 10px;">
+                              <video autoplay muted loop preload="auto" height="300" style="border-radius: 10px;">
+                                 <source src="images/background/1726138633719.mp4" type="video/mp4">
+                                 Your browser does not support the video tag.
+                              </video>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="proposition text-white position-relative z-0 start-0" style="background:rgb(7, 24, 51)">
+      <div class="container">
+         <div class="feature-inner">
+            <div class="counter text-center">
+               <div class="inner-counter mb-2">
+                  <div class="row">
+                     <div class="col-lg-2 col-md-2 p-2">
+                        <div class="counter-box p-2 border-end border-white border-opacity-25">
+                           <h1 class="text-white m-0"><span class="num" data-val="300"></span><span>+</span></h1>
+                           <p>Attendees</p>
+                        </div>
+                     </div>
+                     <div class="col-lg-2 col-md-2 p-2">
+                        <div class="counter-box p-2 border-end border-white border-opacity-25">
+                           <h1 class="text-white m-0"><span class="num" data-val="35"></span><span>+</span></h1>
+                           <p>Partners</p>
+                        </div>
+                     </div>
+                     <div class="col-lg-2 col-md-2 p-2">
+                        <div class="counter-box p-2 border-end border-white border-opacity-25">
+                           <h1 class="text-white m-0"><span class="num" data-val="30"></span><span>+</span></h1>
+                           <p>Speakers</p>
+                        </div>
+                     </div>
+                     <div class="col-lg-2 col-md-2 p-2">
+                        <div class="counter-box p-2 border-end border-white border-opacity-25">
+                           <h1 class="text-white m-0"><span class="num" data-val="6"></span><span>+</span></h1>
+                           <p class="mb-0">Panel Discussions</p>
+                        </div>
+                     </div>
+
+                     <div class="col-lg-2 col-md-2 p-2 mx-auto">
+                        <div class="counter-box p-2 border-end border-white border-opacity-25">
+                           <h1 class="text-white m-0"><span class="num" data-val="10"></span><span>+</span></h1>
+                           <p class="mb-0">Case Studies & Technical Presentations</p>
+                        </div>
+                     </div>
+                     <div class="col-lg-2 col-md-2 p-2 mx-auto">
+                        <div class="counter-box p-2  border-opacity-25">
+                           <h1 class="text-white m-0"><span class="num" data-val="2"></span><span>+</span></h1>
+                           <p class="mb-0">Workshops</p>
+                        </div>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+
+
+
+   <!--speaker section-->
+
+    <!-- <div style="background:#033660" class="py-5">
+      <div id="speakers" class="container pb-5">
+         <div
+            class="container d-md-flex align-items-center justify-content-center text-center text-md-start pt-md-1 pt-lg-3">
+
+            <div class="title-content text-lg-center mb-2  ">
+               <h2 class="mb-1 text-light pt-3" data-aos="fade-up" data-aos-duration="1000">Our Speakers
+               </h2>
+            </div>
+         </div>
+         <div class="row justify-content-center row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 mt-2 mt-lg-4"
+            data-aos="fade-up" data-aos-duration="1300">
+
+
+
+
+            <div class="col px-3" ref="#speakers-04" data-bs-toggle="modal" data-bs-target="#speakers-04">
+               <a href="#speakers-04">
+                  <div class="card card-hover border-0 bg-transparent">
+                     <div class="position-relative-">
+                        <img src="asset/img/past-speakers/7.png" class="d-block rounded-3 mx-auto mb-3" width="280"
+                           style="border-radius: 3.3rem !important;">
+
+                        <div
+                           class="card-img-overlay d-flex flex-column align-items-center justify-content-center rounded-5">
+
+                           <span class="position-absolute top-0 start-0 w-100 h-100  opacity-35"></span>
+                           <div class="position-relative d-flex zindex-2">
+
+
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card-body text-center px-0">
+
+                        <h4 class="fs-lg fw-semibold pt-1 mb-2 text-capitalize text-light">Mr. Aamer Yousaf </h4>
+                        <p class="fs-sm mb-0 " style="color: rgb(182, 182, 182);">Head of Infrastructure & Chief Advisor Storm Water Mitigation</p>
+                     </div>
+                  </div>
+               </a>
+            </div>
+
+            <div class="col px-3" ref="#speakers-04" data-bs-toggle="modal" data-bs-target="#speakers-04">
+               <a href="#speakers-04">
+                  <div class="card card-hover border-0 bg-transparent">
+                     <div class="position-relative-">
+                        <img src="asset/img/past-speakers/7.png" class="d-block rounded-3 mx-auto mb-3" width="280"
+                           style="border-radius: 3.3rem !important;">
+
+                        <div
+                           class="card-img-overlay d-flex flex-column align-items-center justify-content-center rounded-5">
+
+                           <span class="position-absolute top-0 start-0 w-100 h-100  opacity-35"></span>
+                           <div class="position-relative d-flex zindex-2">
+
+
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card-body text-center px-0">
+
+                        <h4 class="fs-lg fw-semibold pt-1 mb-2 text-capitalize text-light">Mr. Shady Zein Eldine</h4>
+                        <p class="fs-sm mb-0 " style="color: rgb(182, 182, 182);">Dams Maintainence Engineer</p>
+                     </div>
+                  </div>
+               </a>
+            </div>
+
+            <div class="col px-3" ref="#speakers-04" data-bs-toggle="modal" data-bs-target="#speakers-04">
+               <a href="#speakers-04">
+                  <div class="card card-hover border-0 bg-transparent">
+                     <div class="position-relative-">
+                        <img src="asset/img/past-speakers/7.png" class="d-block rounded-3 mx-auto mb-3" width="280"
+                           style="border-radius: 3.3rem !important;">
+
+                        <div
+                           class="card-img-overlay d-flex flex-column align-items-center justify-content-center rounded-5">
+
+                           <span class="position-absolute top-0 start-0 w-100 h-100  opacity-35"></span>
+                           <div class="position-relative d-flex zindex-2">
+
+
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card-body text-center px-0">
+
+                        <h4 class="fs-lg fw-semibold pt-1 mb-2 text-capitalize text-light">Mr. Asdam Alghezawi</h4>
+                        <p class="fs-sm mb-0 " style="color: rgb(182, 182, 182);">Engineering Expert</p>
+                     </div>
+                  </div>
+               </a>
+            </div>
+
+            
+
+            <div class="col px-3" ref="#speakers-04" data-bs-toggle="modal" data-bs-target="#speakers-04">
+               <a href="#speakers-04">
+                  <div class="card card-hover border-0 bg-transparent">
+                     <div class="position-relative-">
+                        <img src="asset/img/past-speakers/7.png" class="d-block rounded-3 mx-auto mb-3" width="280"
+                           style="border-radius: 3.3rem !important;">
+
+                        <div
+                           class="card-img-overlay d-flex flex-column align-items-center justify-content-center rounded-5">
+
+                           <span class="position-absolute top-0 start-0 w-100 h-100  opacity-35"></span>
+                           <div class="position-relative d-flex zindex-2">
+
+
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card-body text-center px-0">
+
+                        <h4 class="fs-lg fw-semibold pt-1 mb-2 text-capitalize text-light">Dr. Sajid Pareeth</h4>
+                        <p class="fs-sm mb-0 " style="color: rgb(182, 182, 182);">Director Water & Climate Solutions</p>
+                     </div>
+                  </div>
+               </a>
+            </div>
+
+            <div class="col px-3" ref="#speakers-04" data-bs-toggle="modal" data-bs-target="#speakers-04">
+               <a href="#speakers-04">
+                  <div class="card card-hover border-0 bg-transparent">
+                     <div class="position-relative-">
+                        <img src="asset/img/past-speakers/7.png" class="d-block rounded-3 mx-auto mb-3" width="280"
+                           style="border-radius: 3.3rem !important;">
+
+                        <div
+                           class="card-img-overlay d-flex flex-column align-items-center justify-content-center rounded-5">
+
+                           <span class="position-absolute top-0 start-0 w-100 h-100  opacity-35"></span>
+                           <div class="position-relative d-flex zindex-2">
+
+
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card-body text-center px-0">
+
+                        <h4 class="fs-lg fw-semibold pt-1 mb-2 text-capitalize text-light">Mr. Shehab Abdelmageed</h4>
+                        <p class="fs-sm mb-0 " style="color: rgb(182, 182, 182);">Lead Mechanical & Sanitary Expansions Engineer</p>
+                     </div>
+                  </div>
+               </a>
+            </div>
+
+
+         </div>
+      </div>
+
+
+
+
+   </div>  -->
+   <!-- popup 01 -->
+   <!-- <div class="modal fade" id="speakers-02" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h1 class="modal-title fs-5" id="exampleModalLabel">Speaker</h1>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+               <div class="card mb-3" style="max-width: 800px;">
+                  <div class="row g-0">
+                     <div class="col-md-4">
+                        <img src="asset/img/sp-001.png" class="img-fluid rounded-start" alt="...">
+                     </div>
+                     <div class="col-md-8">
+                        <div class="card-body">
+                           <h2 class="card-title">Dr. Adel AbouJaoude, Ph.D., EurIng, BC.WRE, BC.PLW, M.ASCE</h2>
+                           <h5 class="card-title">Global Director - Water Conveyance & Storage<br>Jacobs
+
+                           </h5>
+
+                           <p class="card-text">
+                              <br>
+                              <b>Bio:</b>
+                              Dr. Adel AbouJaoude, is a highly accomplished civil engineer with over 35 years of
+                              experience in the industry. He has worked on a wide range of projects, from dams to water
+                              supply and conveyance systems, and is a recognized expert in developing innovative
+                              solutions to complex engineering challenges. Besides Water Conveyance, Dr. AbouJaoude's
+                              areas of expertise include water resources engineering, hydraulic engineering, and
+                              geotechnical engineering. His work has spanned across the globe, from Europe to the Middle
+                              East, and Central Asia. He is committed to developing sustainable and resilient
+                              engineering solutions that meet the needs of today while providing a foundation for a more
+                              sustainable future. Dr. Aboujaoude is also known for his ability to lead and manage large
+                              engineering projects and has managed multidisciplinary teams to deliver projects on time
+                              and within budget. He is passionate about making a positive contribution to the civil
+                              engineering profession and believes that civil engineering can make a significant impact
+                              on society.
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+         </div>
+      </div>
+   </div> -->
+
+   <!-- popup 01 -->
+   <!-- <div class="modal fade" id="speakers-04" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h1 class="modal-title fs-5" id="exampleModalLabel">Speaker</h1>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+               <div class="card mb-3" style="max-width: 800px;">
+                  <div class="row g-0">
+                     <div class="col-md-4">
+                        <img src="images\speakers\sp-01.png" class="img-fluid rounded-start" alt="...">
+                     </div>
+                     <div class="col-md-8">
+                        <div class="card-body">
+                           <h2 class="card-title">Mr. Aliuddin Aquil</h2>
+                           <h5 class="card-title">Chief Engineer Infrastructure<br>SAUDCONSULT
+
+                           </h5>
+
+                           <p class="card-text">
+                              <br>
+                              <b>Bio:</b>
+                              More than 3 decades of Experience in and Exposure to the Design Management of the
+                              Infrastructure Projects across the Kingdom of Saudi Arabia and GCC including Govt, Public
+                              and Private Sector.
+                              Currently serving as a capacity of Chief Engineer Infrastructure in one of the oldest and
+                              the leading Engineering Consultancy firm in the Kingdom of Saudi Arabia, Saudi Consulting
+                              Services –SAUDCONSULT since 1994.
+                              <br><br>
+                              Graduated in 1991 Civil Engineering from the Prestigious Osmania University India
+                              associated with the Several Professional and Engineering Organization around the Globe
+                              related to Water, Wastewater, Environment and Sustainability.
+                              <br><br>
+                              Profile of Experience and Performance highlights and indicates the long sustainable
+                              journey of expertise and proven skills in the Project Management, Design Management,
+                              Stakeholder Management for the Infrastructure and Site Development Projects. Some of the
+                              Key Mega Projects including.
+                              <br><br>
+                              <br>* Wastewater Collection System -Jeddah City- National Water Company
+                              <br>* Jeddah Central Development
+                              <br>* Amaala - Red Sea Global
+                              <br>* Riyadh Township SEDRA 1-Riyadh
+                              <br>* MiSK City-Riyadh
+                              <br>* King Abdullah Economic City
+                              <br>* Ministry of Housing Mega Projects across Kingdom
+                              <br>* Wastewater Master Plan-Jeddah
+
+                              <br>* Watewater Master Plan –Yanbu Industrial City
+                              <br>* Storm Drainage System of Mina, Muzdalifa and Arafat
+                              <br>* World's Largest Slaughterhouse in Mina
+                        </div>
+                     </div>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div> -->
+
+   <!--Past Speakers-->
+   <section class="speakers " id="past-speakers" style="background:#0d3f68">
+      <div class="container">
+         <div class="speaker-inner" data-aos="fade-up" data-aos-duration="2000">
+            <div class="speaker-title text-center p-2">
+               <div class="row align-items-center ">
+                  <div class="col-lg-12">
+                     <div class="title-content text-lg-center mb-2">
+                        <h2 class="mb-1 text-light">Series <span class="">Speakers</span></h2>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="sepaker-list text-center text-white">
+               <div class="row">
+                  <div class="swiper swiper-initialized swiper-horizontal swiper-pointer-events" data-swiper-options='{
+                     "slidesPerView": 1,
+                     "spaceBetween": 8,
+                     "loop": true,
+                     "autoplay": {
+                     "delay": 3000,
+                     "disableOnInteraction": false
+                     },
+                     "pagination": {
+                     "el": ".swiper-pagination",
+                     "clickable": true
+                     },
+                     "navigation": {
+                     "nextEl": ".swiper-button-next",
+                     "prevEl": ".swiper-button-prev"
+                     },
+                     "breakpoints": {
+                     "480": {
+                     "slidesPerView": 2
+                     },
+                     "700": {
+                     "slidesPerView": 3
+                     },
+                     "900": {
+                     "slidesPerView": 3
+                     },
+                     "1160": {
+                     "slidesPerView": 5
+                     },
+                     "1500": {
+                     "slidesPerView": 5
+                     }
+                     }
+                     }'>
+                     <div class="swiper-wrapper" aria-live="polite">
+                        <div class="swiper-slide py-3">
+                           <div class="card card-body card-hover  border-0 text-center mx-2" href="#speakers-01"
+                              data-bs-toggle="modal" data-bs-target="#speakers-01"
+                              style="box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;">
+                              <img src="asset/img/past-speakers/1.png" class="d-block rounded-3 mx-auto mb-3"
+                                 width="162">
+                              <div class="card-body d-flex flex-column">
+                                 <h5 class="card-title" style="color: black; font-size: 0.875rem !important;">Mr.
+                                    Ahmed Humood Alwaeel</h5>
+                                 <p class="card-text" style="text-align: center; color: black; font-size:10px">
+                                    Director of Projects Planning and Design Department <br> Ministry of Energy &
+                                    Infrastructure – UAE<br><br>
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide py-3">
+                           <div class="card card-body card-hover  border-0 text-center mx-2" href="#speakers-02"
+                              data-bs-toggle="modal" data-bs-target="#speakers-02"
+                              style="box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;">
+                              <img src="asset/img/past-speakers/2.png" class="d-block rounded-3 mx-auto mb-3"
+                                 width="162">
+                              <div class="card-body d-flex flex-column">
+                                 <h5 class="card-title" style="color: black; font-size: 0.875rem !important;">Mr.
+                                    Abdulrahman Mohammad Alharmoodi</h5>
+                                 <p class="card-text" style="text-align: center; color: black; font-size:10px">
+                                    Director of Dams and Water Facilities <br>
+                                    Ministry of Energy & Infrastructure - UAE
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide py-3">
+                           <div class="card card-body card-hover  border-0 text-center mx-2" href="#speakers-03"
+                              data-bs-toggle="modal" data-bs-target="#speakers-03"
+                              style="box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;">
+                              <img src="asset/img/past-speakers/3.png" class="d-block rounded-3 mx-auto mb-3"
+                                 width="162">
+                              <div class="card-body d-flex flex-column">
+                                 <h5 class="card-title" style="color: black; font-size: 0.875rem !important;">Mr.
+                                    Rasheed Mohammad</h5>
+                                 <p class="card-text" style="text-align: center; color: black; font-size:10px">
+                                    Dams & Flood Protection Project Manager <br>
+                                    Ministry of Energy and Infrastructure<br><br>
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide py-3">
+                           <div class="card card-body card-hover  border-0 text-center mx-2" href="#speakers-04"
+                              data-bs-toggle="modal" data-bs-target="#speakers-04"
+                              style="box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;">
+                              <img src="asset/img/past-speakers/4.png" class="d-block rounded-3 mx-auto mb-3"
+                                 width="162">
+                              <div class="card-body d-flex flex-column">
+                                 <h5 class="card-title" style="color: black; font-size: 0.875rem !important;">Mr.
+                                    Asdam Alghezawi</h5>
+                                 <p class="card-text" style="text-align: center; color: black; font-size:10px">
+                                    Engineering Expert - Project Planning & Design Department <br>
+                                    Ministry of Energy and Infrastructure<br><br>
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide py-3">
+                           <div class="card card-body card-hover  border-0 text-center mx-2" href="#speakers-05"
+                              data-bs-toggle="modal" data-bs-target="#speakers-05"
+                              style="box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;">
+                              <img src="asset/img/past-speakers/5.png" class="d-block rounded-3 mx-auto mb-3"
+                                 width="162">
+                              <div class="card-body d-flex flex-column">
+                                 <h5 class="card-title" style="color: black; font-size: 0.875rem !important;">Dr.
+                                    Mohamed Dawoud</h5>
+                                 <p class="card-text" style="text-align: center; color: black; font-size:10px">
+                                    Senior Water Resources Advisor <br>
+                                    Environment Agency – Abu Dhabi (EAD)<br><br><br>
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide py-3">
+                           <div class="card card-body card-hover  border-0 text-center mx-2" href="#speakers-06"
+                              data-bs-toggle="modal" data-bs-target="#speakers-06"
+                              style="box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;">
+                              <img src="asset/img/past-speakers/6.png" class="d-block rounded-3 mx-auto mb-3"
+                                 width="162">
+                              <div class="card-body d-flex flex-column">
+                                 <h5 class="card-title" style="color: black; font-size: 0.875rem !important;">Ms
+                                    Nariba Gittens</h5>
+                                 <p class="card-text" style="text-align: center; color: black; font-size:10px">
+                                    Associate Director <br> Water Middle East WSP<br><br><br><br><br>
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide py-3">
+                           <div class="card card-body card-hover  border-0 text-center mx-2" href="#speakers-07"
+                              data-bs-toggle="modal" data-bs-target="#speakers-07"
+                              style="box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;">
+                              <img src="asset/img/past-speakers/7.png" class="d-block rounded-3 mx-auto mb-3"
+                                 width="162">
+                              <div class="card-body d-flex flex-column">
+                                 <h5 class="card-title" style="color: black; font-size: 0.875rem !important;">Mr
+                                    Bilal Abdullah</h5>
+                                 <p class="card-text" style="text-align: center; color: black; font-size:10px">
+                                    Infrastructure Projects <br>
+                                    Sharjah Municipality<br><br><br><br><br>
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide py-3">
+                           <div class="card card-body card-hover  border-0 text-center mx-2" href="#speakers-08"
+                              data-bs-toggle="modal" data-bs-target="#speakers-08"
+                              style="box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;">
+                              <img src="asset/img/past-speakers/8.png" class="d-block rounded-3 mx-auto mb-3"
+                                 width="162">
+                              <div class="card-body d-flex flex-column">
+                                 <h5 class="card-title" style="color: black; font-size: 0.875rem !important;">Mr
+                                    Emil Korsbrekke</h5>
+                                 <p class="card-text" style="text-align: center; color: black; font-size:10px">
+                                    CEO<br>
+                                    Hydrofence<br><br><br><br><br>
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide py-3">
+                           <div class="card card-body card-hover  border-0 text-center mx-2" href="#speakers-09"
+                              data-bs-toggle="modal" data-bs-target="#speakers-09"
+                              style="box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;">
+                              <img src="asset/img/past-speakers/9.png" class="d-block rounded-3 mx-auto mb-3"
+                                 width="162">
+                              <div class="card-body d-flex flex-column">
+                                 <h5 class="card-title" style="color: black; font-size: 0.875rem !important;">Mr.
+                                    Yogesh Agashe</h5>
+                                 <p class="card-text" style="text-align: center; color: black; font-size:10px">
+                                    Principal Urban Designer <br>
+                                    Jacobs<br><br><br><br><br>
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide py-3">
+                           <div class="card card-body card-hover  border-0 text-center mx-2" href="#speakers-10"
+                              data-bs-toggle="modal" data-bs-target="#speakers-10"
+                              style="box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;">
+                              <img src="asset/img/past-speakers/10.png" class="d-block rounded-3 mx-auto mb-3"
+                                 width="162">
+                              <div class="card-body d-flex flex-column">
+                                 <h5 class="card-title" style="color: black; font-size: 0.875rem !important;">Mr.
+                                    Odai Kassab</h5>
+                                 <p class="card-text" style="text-align: center; color: black; font-size:10px">
+                                    Lead Infrastructure Engineer<br>
+                                    CDM Smith<br><br><br><br><br>
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide py-3">
+                           <div class="card card-body card-hover  border-0 text-center mx-2" href="#speakers-11"
+                              data-bs-toggle="modal" data-bs-target="#speakers-11"
+                              style="box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;">
+                              <img src="asset/img/past-speakers/11.png" class="d-block rounded-3 mx-auto mb-3"
+                                 width="162">
+                              <div class="card-body d-flex flex-column">
+                                 <h5 class="card-title" style="color: black; font-size: 0.875rem !important;">Mr.
+                                    Ganapathi Arthanari</h5>
+                                 <p class="card-text" style="text-align: center; color: black; font-size:10px">
+                                    Vice President | Senior Project Manager <br>
+                                    CDM Smith<br><br><br>
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide py-3">
+                           <div class="card card-body card-hover  border-0 text-center mx-2" href="#speakers-12"
+                              data-bs-toggle="modal" data-bs-target="#speakers-12"
+                              style="box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;">
+                              <img src="asset/img/past-speakers/12.png" class="d-block rounded-3 mx-auto mb-3"
+                                 width="162">
+                              <div class="card-body d-flex flex-column">
+                                 <h5 class="card-title" style="color: black; font-size: 0.875rem !important;">Ms.
+                                    Alicia Dauth</h5>
+                                 <p class="card-text" style="text-align: center; color: black; font-size:10px">
+                                    Water Assurance Specialist <br>
+                                    Alliance for Water Stewardship Credential Specialist, Chartered
+                                    Environmentalist, IEMA<br><br><br>
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide py-3">
+                           <div class="card card-body card-hover  border-0 text-center mx-2" href="#speakers-13"
+                              data-bs-toggle="modal" data-bs-target="#speakers-13"
+                              style="box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;">
+                              <img src="asset/img/past-speakers/13.png" class="d-block rounded-3 mx-auto mb-3"
+                                 width="162">
+                              <div class="card-body d-flex flex-column">
+                                 <h5 class="card-title" style="color: black; font-size: 0.875rem !important;">Mr.
+                                    Nicholas Byczynski</h5>
+                                 <p class="card-text" style="text-align: center; color: black; font-size:10px">
+                                    Director of Sustainable Engineering <br>
+                                    AESG<br><br><br>
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide py-3">
+                           <div class="card card-body card-hover  border-0 text-center mx-2" href="#speakers-14"
+                              data-bs-toggle="modal" data-bs-target="#speakers-14"
+                              style="box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;">
+                              <img src="asset/img/past-speakers/14.png" class="d-block rounded-3 mx-auto mb-3"
+                                 width="162">
+                              <div class="card-body d-flex flex-column">
+                                 <h5 class="card-title" style="color: black; font-size: 0.875rem !important;">Ms.
+                                    Tamara Bajic</h5>
+                                 <p class="card-text" style="text-align: center; color: black; font-size:10px">
+                                    Associate Director, Strategy and Advisory <br>
+                                    AESG<br><br><br><br>
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide py-3">
+                           <div class="card card-body card-hover  border-0 text-center mx-2" href="#speakers-15"
+                              data-bs-toggle="modal" data-bs-target="#speakers-15"
+                              style="box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;">
+                              <img src="asset/img/past-speakers/15.png" class="d-block rounded-3 mx-auto mb-3"
+                                 width="162">
+                              <div class="card-body d-flex flex-column">
+                                 <h5 class="card-title" style="color: black; font-size: 0.875rem !important;">Mr.
+                                    Mohamed Shamseldin</h5>
+                                 <p class="card-text" style="text-align: center; color: black; font-size:10px">
+                                    Senior Infrastructure and Flood Protection Engineer <br>
+                                    AE7<br><br><br>
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide py-3">
+                           <div class="card card-body card-hover  border-0 text-center mx-2" href="#speakers-16"
+                              data-bs-toggle="modal" data-bs-target="#speakers-16"
+                              style="box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;">
+                              <img src="asset/img/past-speakers/16.png" class="d-block rounded-3 mx-auto mb-3"
+                                 width="162">
+                              <div class="card-body d-flex flex-column">
+                                 <h5 class="card-title" style="color: black; font-size: 0.875rem !important;">Dr.
+                                    Adel AbouJaoudé</h5>
+                                 <p class="card-text" style="text-align: center; color: black; font-size:10px">
+                                    Global Director <br> Water Conveyance & Storage <br>
+                                    Jacobs<br><br><br>
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide py-3">
+                           <div class="card card-body card-hover  border-0 text-center mx-2" href="#speakers-17"
+                              data-bs-toggle="modal" data-bs-target="#speakers-17"
+                              style="box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;">
+                              <img src="asset/img/past-speakers/17.png" class="d-block rounded-3 mx-auto mb-3"
+                                 width="162">
+                              <div class="card-body d-flex flex-column">
+                                 <h5 class="card-title" style="color: black; font-size: 0.875rem !important;">Mr.
+                                    Amr Mohamed</h5>
+                                 <p class="card-text" style="text-align: center; color: black; font-size:10px">
+                                    Project Manager / Technical Lead - Infrastructure<br>
+                                    Stantec<br><br><br><br>
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide py-3">
+                           <div class="card card-body card-hover  border-0 text-center mx-2" href="#speakers-18"
+                              data-bs-toggle="modal" data-bs-target="#speakers-18"
+                              style="box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;">
+                              <img src="asset/img/past-speakers/18.png" class="d-block rounded-3 mx-auto mb-3"
+                                 width="162">
+                              <div class="card-body d-flex flex-column">
+                                 <h5 class="card-title" style="color: black; font-size: 0.875rem !important;">Dr.
+                                    Babak Bozorgy</h5>
+                                 <p class="card-text" style="text-align: center; color: black; font-size:10px">
+                                    Regional Technical Director for Excellence and Innovation <br>
+                                    Stantec<br><br><br><br>
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide py-3">
+                           <div class="card card-body card-hover  border-0 text-center mx-2" href="#speakers-19"
+                              data-bs-toggle="modal" data-bs-target="#speakers-19"
+                              style="box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;">
+                              <img src="asset/img/past-speakers/19.png" class="d-block rounded-3 mx-auto mb-3"
+                                 width="162">
+                              <div class="card-body d-flex flex-column">
+                                 <h5 class="card-title" style="color: black; font-size: 0.875rem !important;">Mr.
+                                    Glynn Monks</h5>
+                                 <p class="card-text" style="text-align: center; color: black; font-size:10px">
+                                    Technical Director <br>
+                                    Parsons Corporation<br><br><br><br><br>
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide py-3">
+                           <div class="card card-body card-hover  border-0 text-center mx-2" href="#speakers-20"
+                              data-bs-toggle="modal" data-bs-target="#speakers-20"
+                              style="box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;">
+                              <img src="asset/img/past-speakers/20.png" class="d-block rounded-3 mx-auto mb-3"
+                                 width="162">
+                              <div class="card-body d-flex flex-column">
+                                 <h5 class="card-title" style="color: black; font-size: 0.875rem !important;">Mr.
+                                    Miloš Trajković</h5>
+                                 <p class="card-text" style="text-align: center; color: black; font-size:10px">
+                                    Technical Director <br>
+                                    Meinhardt Group<br><br><br><br><br>
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide py-3">
+                           <div class="card card-body card-hover  border-0 text-center mx-2" href="#speakers-21"
+                              data-bs-toggle="modal" data-bs-target="#speakers-21"
+                              style="box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;">
+                              <img src="asset/img/past-speakers/21.png" class="d-block rounded-3 mx-auto mb-3"
+                                 width="162">
+                              <div class="card-body d-flex flex-column">
+                                 <h5 class="card-title" style="color: black; font-size: 0.875rem !important;">Mrs.
+                                    Lina Abolail</h5>
+                                 <p class="card-text" style="text-align: center; color: black; font-size:10px">
+                                    Polypipe Middle East <br>
+                                    Regional Director for Water Management Solutions<br><br><br><br>
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide py-3">
+                           <div class="card card-body card-hover  border-0 text-center mx-2" href="#speakers-22"
+                              data-bs-toggle="modal" data-bs-target="#speakers-22"
+                              style="box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;">
+                              <img src="asset/img/past-speakers/22.png" class="d-block rounded-3 mx-auto mb-3"
+                                 width="162">
+                              <div class="card-body d-flex flex-column">
+                                 <h5 class="card-title" style="color: black; font-size: 0.875rem !important;">Dr.
+                                    Sajid Pareeth</h5>
+                                 <p class="card-text" style="text-align: center; color: black; font-size:10px">
+                                    Director Water & Climate Solutions Education & Culture <br>
+                                    Expo City Dubai<br><br><br><br>
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide py-3">
+                           <div class="card card-body card-hover  border-0 text-center mx-2" href="#speakers-23"
+                              data-bs-toggle="modal" data-bs-target="#speakers-23"
+                              style="box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;">
+                              <img src="asset/img/past-speakers/23.png" class="d-block rounded-3 mx-auto mb-3"
+                                 width="162">
+                              <div class="card-body d-flex flex-column">
+                                 <h5 class="card-title" style="color: black; font-size: 0.875rem !important;">
+                                    Mr.Gerhard Loots</h5>
+                                 <p class="card-text" style="text-align: center; color: black; font-size:10px">
+                                    CEO <br>
+                                    Kallipr<br><br><br><br><br>
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide py-3">
+                           <div class="card card-body card-hover  border-0 text-center mx-2" href="#speakers-24"
+                              data-bs-toggle="modal" data-bs-target="#speakers-24"
+                              style="box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;">
+                              <img src="asset/img/past-speakers/24.png" class="d-block rounded-3 mx-auto mb-3"
+                                 width="162">
+                              <div class="card-body d-flex flex-column">
+                                 <h5 class="card-title" style="color: black; font-size: 0.875rem !important;">
+                                    Mr.Chris Botha</h5>
+                                 <p class="card-text" style="text-align: center; color: black; font-size:10px">
+                                    Strategic Director – Water <br>
+                                    FUGRO<br><br><br><br><br>
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide py-3">
+                           <div class="card card-body card-hover  border-0 text-center mx-2" href="#speakers-25"
+                              data-bs-toggle="modal" data-bs-target="#speakers-25"
+                              style="box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;">
+                              <img src="asset/img/past-speakers/25.png" class="d-block rounded-3 mx-auto mb-3"
+                                 width="162">
+                              <div class="card-body d-flex flex-column">
+                                 <h5 class="card-title" style="color: black; font-size: 0.875rem !important;">
+                                    Mr.Rupak Chatterjee</h5>
+                                 <p class="card-text" style="text-align: center; color: black; font-size:10px">
+                                    Urban Planning Lead <br>
+                                    AECOM<br><br><br><br>
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide py-3">
+                           <div class="card card-body card-hover  border-0 text-center mx-2" href="#speakers-26"
+                              data-bs-toggle="modal" data-bs-target="#speakers-26"
+                              style="box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;">
+                              <img src="asset/img/past-speakers/26.png" class="d-block rounded-3 mx-auto mb-3"
+                                 width="162">
+                              <div class="card-body d-flex flex-column">
+                                 <h5 class="card-title" style="color: black; font-size: 0.875rem !important;">Dr.
+                                    Jayapregasham Tharamapalan</h5>
+                                 <p class="card-text" style="text-align: center; color: black; font-size:10px">
+                                    Project Director (Tunnels) <br>
+                                    Dubai Municipality, Dubai, UAE<br><br><br><br>
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide py-3">
+                           <div class="card card-body card-hover  border-0 text-center mx-2" href="#speakers-27"
+                              data-bs-toggle="modal" data-bs-target="#speakers-27"
+                              style="box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;">
+                              <img src="asset/img/past-speakers/27.png" class="d-block rounded-3 mx-auto mb-3"
+                                 width="162">
+                              <div class="card-body d-flex flex-column">
+                                 <h5 class="card-title" style="color: black; font-size: 0.875rem !important;">Mr.
+                                    Evgeni Iordanov</h5>
+                                 <p class="card-text" style="text-align: center; color: black; font-size:10px">
+                                    Head of Sales ME – Water & Industrial BU <br>
+                                    Sulzer Pumps Middle East<br><br><br>
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide py-3">
+                           <div class="card card-body card-hover  border-0 text-center mx-2" href="#speakers-28"
+                              data-bs-toggle="modal" data-bs-target="#speakers-28"
+                              style="box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;">
+                              <img src="asset/img/past-speakers/28.png" class="d-block rounded-3 mx-auto mb-3"
+                                 width="162">
+                              <div class="card-body d-flex flex-column">
+                                 <h5 class="card-title" style="color: black; font-size: 0.875rem !important;">Mr.
+                                    Ritesh Patel</h5>
+                                 <p class="card-text" style="text-align: center; color: black; font-size:10px">
+                                    General Manager (Sr. GM) – Technical Project <br>
+                                    Astral Pipes<br><br><br><br>
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+
+                     </div>
+                     <div
+                        class="swiper-pagination position-relative pt-3 mt-3 swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
+                     </div>
+                  </div>
+                  <div class="swiper-button-next" style="right: -45px;"></div>
+                  <div class="swiper-button-prev" style="left: -45px;"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+   <!--Past Sponsors and Partners-->
+   <section class="bg-dark" id="">
+      <div class="container">
+         <div class="speaker-inner" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="speaker-title text-center p-2">
+               <div class="row align-items-center ">
+                  <div class="col-lg-12">
+                     <div class="title-content text-lg-center mb-2 ">
+                        <h2 class="mb-1 text-light">Series Sponsors <span>&</span> Partners</h2>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="sepaker-list text-center text-white">
+               <div class="row">
+                  <div class="swiper" data-swiper-options='{
+                     "slidesPerView": 1,
+                     "spaceBetween": 10,
+                     "loop": true,
+                     "autoplay": {
+                     "delay": 3000,
+                     "disableOnInteraction": false
+                     },
+                     "pagination": {
+                     "el": ".swiper-pagination",
+                     "clickable": true
+                     },
+                     "navigation": {
+                     "nextEl": ".swiper-button-next",
+                     "prevEl": ".swiper-button-prev"
+                     },
+                     "breakpoints": {
+                     "480": {
+                     "slidesPerView": 2
+                     },
+                     "700": {
+                     "slidesPerView": 3
+                     },
+                     "900": {
+                     "slidesPerView": 4
+                     },
+                     "1160": {
+                     "slidesPerView": 4
+                     },
+                     "1500": {
+                     "slidesPerView": 4
+                     }
+                     }
+                     }'>
+                     <div class="swiper-wrapper">
+
+                        <!-- Sponsor -->
+                        <div class="swiper-slide py-3">
+                           <img src="asset/img/past-patners-sponsor/1.png" class="d-block rounded-3 mx-auto mb-3"
+                              width="250" alt="Sponsor 3">
+                        </div>
+
+                        <div class="swiper-slide py-3">
+                           <img src="asset/img/past-patners-sponsor/2.png" class="d-block rounded-3 mx-auto mb-3"
+                              width="250" alt="Sponsor 3">
+                        </div>
+
+                        <div class="swiper-slide py-3">
+                           <img src="asset/img/past-patners-sponsor/3.png" class="d-block rounded-3 mx-auto mb-3"
+                              width="250" alt="Sponsor 3">
+                        </div>
+
+                        <div class="swiper-slide py-3">
+                           <img src="asset/img/past-patners-sponsor/4.png" class="d-block rounded-3 mx-auto mb-3"
+                              width="250" alt="Sponsor 3">
+                        </div>
+
+                        <div class="swiper-slide py-3">
+                           <img src="asset/img/past-patners-sponsor/5.png" class="d-block rounded-3 mx-auto mb-3"
+                              width="250" alt="Sponsor 3">
+                        </div>
+                        <div class="swiper-slide py-3">
+                           <img src="asset/img/past-patners-sponsor/6.png" class="d-block rounded-3 mx-auto mb-3"
+                              width="250" alt="Sponsor 3">
+                        </div>
+                        <div class="swiper-slide py-3">
+                           <img src="asset/img/past-patners-sponsor/7.png" class="d-block rounded-3 mx-auto mb-3"
+                              width="250" alt="Sponsor 3">
+                        </div>
+                        <div class="swiper-slide py-3">
+                           <img src="asset/img/past-patners-sponsor/8.png" class="d-block rounded-3 mx-auto mb-3"
+                              width="250" alt="Sponsor 3">
+                        </div>
+                        <div class="swiper-slide py-3">
+                           <img src="asset/img/past-patners-sponsor/9.png" class="d-block rounded-3 mx-auto mb-3"
+                              width="250" alt="Sponsor 3">
+                        </div>
+                        <div class="swiper-slide py-3">
+                           <img src="asset/img/past-patners-sponsor/10.png" class="d-block rounded-3 mx-auto mb-3"
+                              width="250" alt="Sponsor 3">
+                        </div>
+                        <div class="swiper-slide py-3">
+                           <img src="asset/img/past-patners-sponsor/11.png" class="d-block rounded-3 mx-auto mb-3"
+                              width="250" alt="Sponsor 3">
+                        </div>
+                        <div class="swiper-slide py-3">
+                           <img src="asset/img/past-patners-sponsor/12.png" class="d-block rounded-3 mx-auto mb-3"
+                              width="250" alt="Sponsor 3">
+                        </div>
+                        <div class="swiper-slide py-3">
+                           <img src="asset/img/past-patners-sponsor/13.png" class="d-block rounded-3 mx-auto mb-3"
+                              width="250" alt="Sponsor 3">
+                        </div>
+                        <div class="swiper-slide py-3">
+                           <img src="asset/img/past-patners-sponsor/14.png" class="d-block rounded-3 mx-auto mb-3"
+                              width="250" alt="Sponsor 3">
+                        </div>
+                        <div class="swiper-slide py-3">
+                           <img src="asset/img/past-patners-sponsor/15.png" class="d-block rounded-3 mx-auto mb-3"
+                              width="250" alt="Sponsor 3">
+                        </div>
+                        <div class="swiper-slide py-3">
+                           <img src="asset/img/past-patners-sponsor/16.png" class="d-block rounded-3 mx-auto mb-3"
+                              width="250" alt="Sponsor 3">
+                        </div>
+                        <div class="swiper-slide py-3">
+                           <img src="asset/img/past-patners-sponsor/17.png" class="d-block rounded-3 mx-auto mb-3"
+                              width="250" alt="Sponsor 3">
+                        </div>
+                     </div>
+                     <!-- Pagination 
+                           <div class="swiper-pagination"></div>-->
+                     <!-- Navigation -->
+                     <div class="swiper-button-next" style="right: -45px;"></div>
+                     <div class="swiper-button-prev" style="left: -45px;"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+
+   <section class="price bg-lightgrey">
+      <div class="container">
+         <div class="price-inner text-center">
+            <div class="price-title mb-7 w-lg-70 m-auto" data-aos="fade-down" data-aos-duration="500">
+               <h2 class="mb-1">Industry
+                  <span class="pink">Insights & News</span> Updates
+               </h2>
+            </div>
+         </div>
+         <div class="row">
+            <style>
+               .card-img-top {
+                   height: 200px; /* Set fixed height */
+                   object-fit: cover; /* Ensures images fit well */
+               }
+               .event-info-box {
+                   height: 100%; /* Make all boxes the same height */
+               }
+               /* Smooth hover effect on cards */
+.event-info-box {
+    transition: all 0.3s ease-in-out;
+}
+
+.event-info-box:hover {
+    transform: scale(1.02); /* Slightly enlarges */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Adds shadow */
+}
+
+/* Optional: Darken image slightly on hover */
+.event-info-box:hover .card-img-top {
+    opacity: 0.85;
+    transition: opacity 0.3s ease-in-out;
+}
+
+           </style>
+           
+           <div class="row">
+               <div class="col-lg-4 mb-3" data-aos="fade-right" data-aos-duration="500">
+                   <a href="https://www.khaleejtimes.com/uae/dubai-sheikh-mohammed-announces-dh30-billion-rain-drainage-network" target="_blank">
+                       <div class="event-info-box embossed-div d-flex flex-column p-4 rounded bg-white box-shadow my-2">
+                           <div class="location-info text-center">
+                               <div class="card">
+                                   <img class="card-img-top" src="https://image.khaleejtimes.com/?uuid=18f7c90d-a42c-501a-bd5e-a9f0ca234828&function=fit&type=preview&source=false&q=75&maxsize=1500&scaleup=0" alt="Card image cap">
+                               </div>
+                               <h6 class="mb-1 mt-3">Dubai: Sheikh Mohammed announces Dh30-billion rain drainage network</h6>
+                           </div>
+                       </div>
+                   </a>
+               </div>
+           
+               <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="500">
+                   <a href="https://mediaoffice.ae/en/news/2024/april/05-04/dewa-enhances-water-management" target="_blank">
+                       <div class="event-info-box embossed-div d-flex flex-column p-4 rounded bg-white box-shadow my-2">
+                           <div class="location-info text-center">
+                               <div class="card">
+                                   <img class="card-img-top" src="https://mediaoffice.ae/-/media/2024/april/05-04/01/photo-1.jpg?h=1480&iar=0&w=2220&hash=2C382E3B843B70D4CF4C8F94F9FDA288" alt="Card image cap">
+                               </div>
+                               <h6 class="mb-1 mt-3">DEWA enhances water management and distribution efficiency through smart systems and innovative technologies</h6>
+                           </div>
+                       </div>
+                   </a>
+               </div>
+           
+               <div class="col-lg-4 mb-3" data-aos="fade-left" data-aos-duration="500">
+                   <a href="https://www.zawya.com/en/press-release/companies-news/dewa-wins-the-smart-water-project-of-the-year-award-2024-at-the-global-water-awards-wzw2kalz" target="_blank">
+                       <div class="event-info-box embossed-div d-flex flex-column p-4 rounded bg-white box-shadow my-2">
+                           <div class="location-info text-center">
+                               <div class="card">
+                                   <img class="card-img-top" src="https://static.zawya.com/view/acePublic/alias/contentid/MmE2ZTYxOTAtNTYxNi00/0/h-esaeedmohammedaltayermd-ceoofdewa-jpg.webp?f=3%3A2&q=0.75&w=1920" alt="Card image cap">
+                               </div>
+                               <h6 class="mb-1 mt-3">DEWA wins the Smart Water Project of the Year Award 2024 at the Global Water Awards</h6>
+                           </div>
+                       </div>
+                   </a>
+               </div>
+           
+               <div class="col-lg-4 mb-3" data-aos="fade-right" data-aos-duration="500">
+                   <a href="https://www.thenationalnews.com/opinion/comment/uae-ready-for-innovation-in-area-of-water-management-this-is-not-a-pipe-dream-1.910042" target="_blank">
+                       <div class="event-info-box embossed-div d-flex flex-column p-4 rounded bg-white box-shadow my-2">
+                           <div class="location-info text-center">
+                               <div class="card">
+                                   <img class="card-img-top" src="https://thenational-the-national-prod.cdn.arcpublishing.com/resizer/v2/YF4ATHNAIZP3JM5GDYJUF4FGZA.jpg?smart=true&auth=4de12c7a26f500c3317c4fd7537e3026b040a392473bb8e17e2083da38268618&width=800&height=450" alt="Card image cap">
+                               </div>
+                               <h6 class="mb-1 mt-3">UAE ready for innovation in area of water management – this is not a pipe dream</h6>
+                           </div>
+                       </div>
+                   </a>
+               </div>
+           
+               <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="500">
+                   <a href="https://gulfnews.com/gn-focus/world-water-day-2024-innovation-and-sustainability-drive-uaes-journey-to-water-security-1.1711090274044" target="_blank">
+                       <div class="event-info-box embossed-div d-flex flex-column p-4 rounded bg-white box-shadow my-2">
+                           <div class="location-info text-center">
+                               <div class="card">
+                                   <img class="card-img-top" src="https://media.assettype.com/gulfnews%2Fimport%2F2024%2F03%2F22%2FWater-Day_18e64fbef85_large.jpg?w=1200&auto=format%2Ccompress&fit=max" alt="Card image cap">
+                               </div>
+                               <h6 class="mb-1 mt-3">World Water Day 2024: Innovation and sustainability drive UAE’s journey to water security</h6>
+                           </div>
+                       </div>
+                   </a>
+               </div>
+           
+               <div class="col-lg-4 mb-3" data-aos="fade-left" data-aos-duration="500">
+                   <a href="https://en.aletihad.ae/news/uae/4473679/uae-inspires-innovators-to-turn-tide-on-water-crisis" target="_blank">
+                       <div class="event-info-box embossed-div d-flex flex-column p-4 rounded bg-white box-shadow my-2">
+                           <div class="location-info text-center">
+                               <div class="card">
+                                   <img class="card-img-top" src="https://cdn1-m.alittihad.ae/store/archive/image/2024/3/26/29546d4e-481d-4ff1-afc3-4f8eb23f0a58.jpg?width=1300" alt="Card image cap">
+                               </div>
+                               <h6 class="mb-1 mt-3">UAE inspires innovators to turn tide on water crisis</h6>
+                           </div>
+                       </div>
+                   </a>
+               </div>
+           </div>
+           
+            
+
+
+         </div>
+      </div>
+   </section>
+
+
+
+
+   <section class="price bg-lightgrey">
+      <div class="container">
+         <div class="price-inner text-center">
+            <div class="price-title mb-7 w-lg-60 m-auto" data-aos="fade-down" data-aos-duration="500">
+               <h2 class="mb-1">Who <span class="pink">Should</span> Attend?</h2>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-lg-4 mb-2" data-aos="fade-right" data-aos-duration="500">
+               <div class="event-info-box embossed-div align-items-center d-flex p-4 rounded bg-white box-shadow my-2">
+                  <div class="event-info-icon text-center">
+                     <i class="fa fa-compass text-white bg-pink rounded-circle me-3"></i>
+                  </div>
+                  <div class="location-info">
+                     <h6 class="mb-1">Government Officials and Policy makers</h6>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-lg-4 mb-2" data-aos="fade-up" data-aos-duration="500">
+               <div class="event-info-box embossed-div align-items-center d-flex p-4 rounded bg-white box-shadow my-2">
+                  <div class="event-info-icon text-center">
+                     <i class="fa fa-compass text-white bg-pink rounded-circle me-3"></i>
+                  </div>
+                  <div class="location-info">
+                     <h6 class="mb-1">Stormwater and Wastewater management teams</h6>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-lg-4 mb-2" data-aos="fade-left" data-aos-duration="500">
+               <div class="event-info-box embossed-div align-items-center d-flex p-4 rounded bg-white box-shadow my-2">
+                  <div class="event-info-icon text-center">
+                     <i class="fa fa-compass text-white bg-pink rounded-circle me-3"></i>
+                  </div>
+                  <div class="location-info">
+                     <h6 class="mb-1">Environmental Scientists & Researchers</h6>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-lg-4 mb-2" data-aos="fade-right" data-aos-duration="500">
+               <div class="event-info-box embossed-div align-items-center d-flex p-4 rounded bg-white box-shadow my-2">
+                  <div class="event-info-icon text-center">
+                     <i class="fa fa-compass text-white bg-pink rounded-circle me-3"></i>
+                  </div>
+                  <div class="location-info">
+                     <h6 class="mb-1">Water Resource Managers</h6>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-lg-4 mb-2" data-aos="fade-up" data-aos-duration="500">
+               <div class="event-info-box embossed-div align-items-center d-flex p-4 rounded bg-white box-shadow my-2">
+                  <div class="event-info-icon text-center">
+                     <i class="fa fa-compass text-white bg-pink rounded-circle me-3"></i>
+                  </div>
+                  <div class="location-info">
+                     <h6 class="mb-1">Drainage Departments</h6>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-lg-4 mb-2" data-aos="fade-left" data-aos-duration="500">
+               <div class="event-info-box embossed-div align-items-center d-flex p-4 rounded bg-white box-shadow my-2">
+                  <div class="event-info-icon text-center">
+                     <i class="fa fa-compass text-white bg-pink rounded-circle me-3"></i>
+                  </div>
+                  <div class="location-info">
+                     <h6 class="mb-1">Sewage Departments</h6>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-lg-4 mb-2" data-aos="fade-right" data-aos-duration="500">
+               <div class="event-info-box embossed-div align-items-center d-flex p-4 rounded bg-white box-shadow my-2">
+                  <div class="event-info-icon text-center">
+                     <i class="fa fa-compass text-white bg-pink rounded-circle me-3"></i>
+                  </div>
+                  <div class="location-info">
+                     <h6 class="mb-1">Design & Engineering Teams</h6>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-lg-4 mb-2" data-aos="fade-up" data-aos-duration="500">
+               <div class="event-info-box embossed-div align-items-center d-flex p-4 rounded bg-white box-shadow my-2">
+                  <div class="event-info-icon text-center">
+                     <i class="fa fa-compass text-white bg-pink rounded-circle me-3"></i>
+                  </div>
+                  <div class="location-info">
+                     <h6 class="mb-1">Master Planners</h6>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-lg-4 mb-2" data-aos="fade-left" data-aos-duration="500">
+               <div class="event-info-box embossed-div align-items-center d-flex p-4 rounded bg-white box-shadow my-2">
+                  <div class="event-info-icon text-center">
+                     <i class="fa fa-compass text-white bg-pink rounded-circle me-3"></i>
+                  </div>
+                  <div class="location-info">
+                     <h6 class="mb-1">Urban Designers</h6>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-lg-4 mb-2" data-aos="fade-right" data-aos-duration="500">
+               <div class="event-info-box embossed-div align-items-center d-flex p-4 rounded bg-white box-shadow my-2">
+                  <div class="event-info-icon text-center">
+                     <i class="fa fa-compass text-white bg-pink rounded-circle me-3"></i>
+                  </div>
+                  <div class="location-info">
+                     <h6 class="mb-1">Landscape Architects</h6>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-lg-4 mb-2" data-aos="fade-up" data-aos-duration="500">
+               <div class="event-info-box embossed-div align-items-center d-flex p-4 rounded bg-white box-shadow my-2">
+                  <div class="event-info-icon text-center">
+                     <i class="fa fa-compass text-white bg-pink rounded-circle me-3"></i>
+                  </div>
+                  <div class="location-info">
+                     <h6 class="mb-1">Civil & Environmental Engineers</h6>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-lg-4 mb-2" data-aos="fade-left" data-aos-duration="500">
+               <div class="event-info-box embossed-div align-items-center d-flex p-4 rounded bg-white box-shadow my-2">
+                  <div class="event-info-icon text-center">
+                     <i class="fa fa-compass text-white bg-pink rounded-circle me-3"></i>
+                  </div>
+                  <div class="location-info">
+                     <h6 class="mb-1">Sustainability Consultants</h6>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+
+
+   <section class="faq pb-0 overflow-visible d-block position-relative z-1" id="registration">
+      <div class="container">
+         <div>
+            <div class="row" data-aos="zoom-in">
+               <div class="col-lg-6 px-4 mb-2 bg-light bg-opacity-75 rounded p-4" style="height: fit-content;">
+                  <div class="faq-general">
+                     <div class="section-title pb-3 text-lg-center">
+                        <!-- <h2 class="mb-2 text-white">water Management<span class="pink">CONFERENCE</span></h2> -->
+                        <div class="banner-image">
+                           <img src="images/team/6.png" alt="banner-image" width="575"
+                              style="border-radius: 5px;width:100%">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-6  align-self-center px-4">
+                  <div class="faq-form bg-white rounded shadow-lg p-6 mb-mi">
+                     <div class="form-title mb-4">
+                        <h2 class="mb-2">Register <span class="pink">Now</span></h2>
+                     </div>
+                     <div class="form-content justify-content-between loading-background">
+                        <div id="loading" style="display: none;">
+                           <img src="images/icon/loading.gif" alt="Loading..." class="loader-image mt-10" width="300">
+                        </div>
+                        <form id="registration-form">
+                           <div id="personal-info-section">
+                              <div class="mb-3">
+                                 <label for="name" class="form-label">Full Name <span
+                                       style="color: red;">*</span></label>
+                                 <input type="text" name="name" class="form-control" id="name" required>
+                                 <div class="error-message" id="name-error"></div>
+                              </div>
+
+                              <div class="mb-3">
+                                 <label for="job_title" class="form-label">Job Title <span
+                                       style="color: red;">*</span></label>
+                                 <input type="text" name="job_title" class="form-control" id="job_title" required>
+                                 <div class="error-message" id="job_title-error"></div>
+                              </div>
+
+                              <div class="mb-3">
+                                 <label for="company" class="form-label">Company <span
+                                       style="color: red;">*</span></label>
+                                 <input type="text" name="company" class="form-control" id="company" required>
+                                 <div class="error-message" id="company-error"></div>
+                              </div>
+
+                              <div class="mb-3">
+                                 <label for="number" class="form-label">Phone Number <span
+                                       style="color: red;">*</span></label>
+                                 <input type="text" name="number" class="form-control" id="number" required>
+                                 <div class="error-message" id="number-error"></div>
+                              </div>
+
+                              <div class="mb-3">
+                                 <label for="email" class="form-label">Corporate Email Address <span
+                                       style="color: red;">*</span></label>
+                                 <input type="email" name="email" class="form-control" id="email" required>
+                                 <div class="error-message" id="email-error"></div>
+                              </div>
+
+                              <button type="button" class="btn btn-primary" id="next-btn">Next <i
+                                    class="fa fa-long-arrow-right ms-4"></i></button>
+                           </div>
+                           <div id="client-info-section" style="display: none;">
+                              <div class="mb-3">
+                                 <label for="company_website_URL" class="form-label">Company Website URL</label>
+                                 <input type="text" name="company_website_URL" class="form-control"
+                                    id="company_website_URL">
+                                 <div class="error-message" id="company_website_URL-error"></div>
+                              </div>
+                              <fieldset class="mb-3">
+                                 <div class="form-check">
+                                    <input type="radio" name="client_type" value="Vendor" id="client_type_vendor"
+                                       class="form-check-input">
+                                    <label class="form-check-label" for="client_type_vendor">Vendor</label>
+                                 </div>
+                                 <div class="form-check">
+                                    <input type="radio" name="client_type" value="Primary" id="client_type_primary"
+                                       class="form-check-input">
+                                    <label class="form-check-label" for="client_type_primary">Primary</label>
+                                 </div>
+                                 <div class="error-message" id="client_type-error"></div>
+                              </fieldset>
+                              <div class="mb-3 form-check">
+                                 <input type="checkbox" name="privacy_policy" id="privacy_policy"
+                                    class="form-check-input">
+                                 <label class="form-check-label" for="privacy_policy">I have read and agreed to
+                                    Cogent
+                                    Solutions™ <a href="https://cogentsolutions.ae/privacy-policy" target="_blank"
+                                       style="color: blue;"> Privacy policy </a><span
+                                       style="color: red;">*</span></label>
+                                 <div class="error-message" id="privacy_policy-error"></div>
+                              </div>
+
+                              <div class="mb-3 form-check">
+                                 <input type="checkbox" name="share_details" id="share_details"
+                                    class="form-check-input">
+                                 <label class="form-check-label" for="share_details">I agree to allow Cogent
+                                    Solutions™
+                                    to share my personal details with the sponsors of this event.</label>
+                                 <div class="error-message" id="share_details-error"></div>
+                              </div>
+
+                              <button type="button" class="btn btn-secondary" id="back-btn"><i
+                                    class="fa fa-long-arrow-left ms-4"></i> Back</button>
+                              <button type="submit" class="btn btn-primary">Submit</button>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <iframe class="position-relative"
+      src="https://cogentsolutions.ae/events/upcoming-physical-events/views-v2/footer-oracle"
+      style="width: 100%; border: none; height:621px"></iframe>
+   <div id="back-to-top">
+      <a href="#" class="bg-pink position-relative align-items-center rounded-circle d-block"></a>
+   </div>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+   <script src="js/jquery-3.7.1.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/custom-nav.js"></script>
+   <script src="js/plugin.js"></script>
+   <script src="js/main.js"></script>
+   <script src="countdown/js/flipdown.js"></script>
+   <script src="countdown/js/js.js" async></script>
+   <script src="js/rain-script.js" async></script>
+
+
+
+   <script src="assetss/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+   <script src="assetss/vendor/swiper/swiper-bundle.min.js"></script>
+   <script src="assetss/js/theme.min.js"></script>
+
+   <script>
+      $(document).ready(function () {
+         $('#next-btn').on('click', function () {
+            $('.error-message').text('');
+            const name = $('#name').val().trim();
+            const jobTitle = $('#job_title').val().trim();
+            const company = $('#company').val().trim();
+            const number = $('#number').val().trim();
+            const email = $('#email').val().trim();
+            let isValid = true;
+
+            if (!name) {
+               $('#name-error').text('Please enter your full name.');
+               isValid = false;
+            }
+            if (!jobTitle) {
+               $('#job_title-error').text('Please enter your job title.');
+               isValid = false;
+            }
+            if (!company) {
+               $('#company-error').text('Please enter your company name.');
+               isValid = false;
+            }
+            const phonePattern = /^[0-9]+$/;
+            if (!number) {
+               $('#number-error').text('Please enter your phone number.');
+               isValid = false;
+            } else if (!phonePattern.test(number)) {
+               $('#number-error').text('Please enter a valid phone number.');
+               isValid = false;
+            }
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!email) {
+               $('#email-error').text('Please enter your corporate email.');
+               isValid = false;
+            } else if (!emailPattern.test(email)) {
+               $('#email-error').text('Please enter a valid email address.');
+               isValid = false;
+            }
+
+            if (isValid) {
+               $('#loading').show();
+               setTimeout(function () {
+                  $('#loading').hide();
+                  $('#client-info-section').show();
+                  $('#personal-info-section').hide();
+               }, 2000);
+            }
+         });
+
+         $('#back-btn').on('click', function () {
+            $('#client-info-section').hide();
+            $('#personal-info-section').show();
+         });
+
+         $('form#registration-form').on('submit', function (e) {
+            e.preventDefault();
+            $('#loading').show();
+
+            const clientType = $('input[name="client_type"]:checked').val();
+            const clientWeb = $('#company_website_URL').val().trim();
+            const privacyPolicy = $('#privacy_policy').is(':checked');
+            const shareDetails = $('#share_details').is(':checked');
+            let isClientInfoValid = true;
+
+            if (!clientWeb) {
+               $('#company_website_URL-error').text('This field cannot be left blank.');
+               isClientInfoValid = false;
+            }
+
+            if (!clientType) {
+               $('#client_type-error').text('Please select a client type.');
+               isClientInfoValid = false;
+            }
+
+            if (!privacyPolicy) {
+               $('#privacy_policy-error').text('You must agree to the privacy policy.');
+               isClientInfoValid = false;
+            }
+
+            if (!shareDetails) {
+               $('#share_details-error').text('You must consent to the mandatory fields.');
+               isClientInfoValid = false;
+            }
+
+            if (isClientInfoValid) {
+               const formData = {
+                  event_name: "2nd Edition - Stormwater and Wastewater Management Conference - UAE",
+                  name: $('#name').val(),
+                  job_title: $('#job_title').val(),
+                  company: $('#company').val(),
+                  number: $('#number').val(),
+                  email: $('#email').val(),
+                  company_website_URL: $('#company_website_URL').val(),
+                  client_type: clientType,
+                  terms: [privacyPolicy, shareDetails]
+               };
+
+               $.ajax({
+                  url: './functions/RegistrationAPI.php',
+                  method: 'GET',
+                  data: formData,
+                  dataType: 'json',
+                  success: function (response) {
+                     $('#loading').hide();
+                     $('#client-info-section').hide();
+                     if (response.success) {
+                        $('<div class="success-message">Thank you for registering with us! Your interest in our event is greatly appreciated. This is an INVITATION ONLY private conference. Our team will be in touch with you shortly to confirm your participation!</div>').appendTo('.form-content');
+                        setTimeout(function () {
+                           $('.success-message').fadeOut();
+                           $('#registration-form')[0].reset();
+                           $('#client-info-section').hide();
+                           $('#personal-info-section').show();
+                        }, 4000);
+                     } else {
+                        alert('Error: ' + response.message);
+                     }
+                  },
+                  error: function (jqXHR, textStatus, errorThrown) {
+                     $('#loading').hide();
+                     alert('Request failed: ' + textStatus + ' - ' + errorThrown);
+                  }
+               });
+            } else {
+               $('#loading').hide();
+            }
+         });
+      });
+   </script>
+
+</body>
+
+</html>
